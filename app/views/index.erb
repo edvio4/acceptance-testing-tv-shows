@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>List of Shows</title>
+  </head>
+
+  <body>
+    <h2>List of Shows</h2>
+    <ul>
+      <% tv_shows.each do |tv_show| %>
+      <li>TV Show Name: <%= tv_show.title %> (<%= tv_show.network %>)</li>
+        <ul>
+          <li>Genre: <%= tv_show.genre %></li>
+        </ul>
+      </li>
+      <br>
+      <% end %>
+    </ul>
+    <a href='/television_shows/new'>Add a TV Show to the feed</a>
+
+  </body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+	<html lang="en">
+	  <head>
+	    <title>Add New Show</title>
+	    <link rel="stylesheet" href="/index.css">
+
+	  </head>
+
+	  <body>
+	    <h2>Add New Show</h2>
+
+
+	    <form action="/tetelevision_shows/new" method="post">
+	      <label for="tv_title">Title</label>
+	      <input type="text" id="tv_title" name="tv_show[title]" placeholder="Enter TV Show Title" value="">
+	        <br>
+	        <br>
+          <label for="network">Network</label>
+  	      <input type="text" id="network" name="tv_show[network]" placeholder="Enter TV Show Network" value="">
+	        <br>
+	        <br>
+          <label for="starting_year">Starting Year</label>
+          <input type="text" id="starting_year" name="tv_show[starting_year]" placeholder="Enter TV Show Starting Year" value="">
+          <br>
+          <br>
+          <label for="synopsis">Synopsis</label>
+          <input type="text" id="synopsis" name="tv_show[synopsis]" placeholder="Enter TV Show Synopsis" value="">
+          <br>
+          <br>
+          <label for="synopsis">Whats New</label>
+          <input type="text" id="synopsis" name="tv_show[synopsis]" placeholder="Enter TV Show Synopsis" value="">
+          <br>
+          <br>
+          <label for="Genre">Select Genre </label>
+          <select id="synopsis" name="tv_show[genre]">
+            <option value="Action">Action</option>
+            <option value="Mystery">Mystery</option>
+            <option value="Drama">Drama</option>
+            <option value="Comedy">Comedy</option>
+            <option value="Fantasy">Fantasy</option>
+          </select>
+          <br>
+          <br>
+	    <input type="submit" value="Add TV Show">
+	    </form>
+      <p></p>
+
+	  </body>
+	</html>
